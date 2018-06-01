@@ -1,0 +1,214 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	color: $lightText;
+}
+
+.app-wrapper{
+	padding-top: 64px;
+
+	.app-container{
+		width: 900px;
+		margin: 0 auto;
+		padding: 40px 16px 100px;
+	}
+}
+
+/**
+ * Buttons
+ */
+.btn{
+	font-size: .875rem;
+	line-height: 2.25rem;
+	font-weight: 500;
+	letter-spacing: .08929em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 8px;
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	min-width: 64px;
+	height: 36px;
+	border: none;
+	outline: none;
+	user-select: none;
+	-webkit-appearance: none;
+	overflow: hidden;
+	vertical-align: middle;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-text{
+	@extend .btn;
+	color: $brandColor;
+	background-color: rgba($brandColor, 0);
+	transition: background-color 15ms linear;
+
+	&:hover{
+		background-color: rgba($brandColor, 0.04);
+	}
+}
+
+.btn-raised{
+	@extend .btn;
+	background-color: $brandColor;
+	color: #fff;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+	transition: box-shadow .28s cubic-bezier(.4,0,.2,1), background-color 15ms linear;
+
+	&:hover{
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+		background-color: lighten($brandColor, 4);
+	}
+
+}
+
+.btn-outlined{
+	@extend .btn;
+	border: 2px solid $brandColor;
+	background-color: transparent;
+	color: $brandColor;
+	transition: background-color 15ms linear;
+
+	&:hover{
+		background-color: rgba($brandColor, 0.04);
+	}
+}
+
+
+// white Buttons
+.btn-text__white{
+	@extend .btn-text;
+	color: #fff;
+	background-color: rgba(#fff, 0);
+
+	&:hover{
+		background-color: rgba(#fff, 0.04);
+	}
+}
+
+.btn-raised__white{
+	@extend .btn-raised;
+	background-color: darken(#fff, 4);
+	color: $brandColor;
+
+	&:hover{
+		background-color: #fff;
+	}
+}
+
+.btn-outlined__white{
+	@extend .btn-outlined;
+	border-color: #fff;
+	color: #fff;
+
+	&:hover{
+		background-color: rgba(#fff, 0.04);
+	}
+}
+
+
+
+
+
+
+/**
+ * Typography
+ */
+h1{
+	font-weight: 300;
+	font-size: 6rem;
+	line-height: 6rem;
+	letter-spacing: -.01562em;
+	color: $darkText;
+}
+h2{
+	font-weight: 300;
+	font-size: 3.75rem;
+	line-height: 3.75rem;
+	letter-spacing: -.00833em;
+	color: $darkText;
+}
+h3{
+	font-weight: 400;
+	font-size: 3rem;
+	line-height: 3.125rem;
+	letter-spacing: normal;
+	color: $darkText;
+}
+h4{
+	font-weight: 400;
+	font-size: 2.125rem;
+	line-height: 2.5rem;
+	letter-spacing: .00735em;
+	color: $darkText;
+}
+h5{
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: normal;
+	color: $darkText;
+}
+h6{
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	letter-spacing: -.0125em;
+	color: $darkText;
+}
+
+.subtitle1{
+	font-size: 1rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	letter-spacing: .00937em;
+	color: $darkText;
+}
+.subtitle2{
+	font-size: .875rem;
+	line-height: 1.375rem;
+	font-weight: 500;
+	letter-spacing: .00714em;
+	color: $darkText;
+}
+
+.body1{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	letter-spacing: .03125em;
+}
+.body2{
+	font-size: .875rem;
+	line-height: 1.25rem;
+	font-weight: 400;
+	letter-spacing: .01786em;
+}
+
+.caption{
+	font-size: .75rem;
+	letter-spacing: .03333em;
+	line-height: 1.25rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $darkText;
+}
+
+.overline{
+	font-size: .75rem;
+	line-height: 2rem;
+	letter-spacing: .16667em;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $darkText;
+}
