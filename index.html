@@ -19,61 +19,185 @@
 				</section>
 
 				<section class="top-app-bar__section align-end">
-					<!--<button class="top-app-bar__action-item material-icons" aria-label="Download">file_download</button>
-					<button class="top-app-bar__action-item material-icons" aria-label="Print this page">print</button>
-					<button class="top-app-bar__action-item material-icons" aria-label="Bookmark this page">bookmark</button>-->
 					<a href="#" title="Iniciar sesión" class="btn-outlined__white top-app-bar__link-item">Iniciar sesión</a>
 				</section>
 			</div>
 		</header><!-- /top-app-bar -->
 
 
+
 		<div class="app-wrapper">
-			<div class="app-container">
-				<div class="app-content">
 
-					<h1>Header one</h1>
-					<h2>Header two</h2>
-					<h3>Header three</h3>
-					<h4>Header four</h4>
-					<h5>Header five</h5>
-					<h6>Header six</h6>
-
-					<h6 class="subtitle1">Subtitle One</h6>
-					<h6 class="subtitle2">Subtitle Two</h6>
-
-					<p class="body1">
-					Body 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-					</p>
-					<p class="body2">
-					Body 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-					</p>
-
-					<div>
-						<span class="caption">Caption text</span>
+			<main class="search-section">
+				<div class="app-container">
+					<div class="app-content">
+						<h3 class="center-text">¿Dónde te ayudamos?</h3>
+						<p class="body1 center-text">Dinos dónde necesitas ayuda y encuentra l@s mejores profesionales</p>
+						<form action="#" method="post" accept-charset="utf-8">							
+							<input type="search" name="s" id="buscador" class="form-input" placeholder="¿Dónde te ayudamos?">
+							<label for="buscador" class="sr-only">¿Dónde te ayudamos?</label>
+							<button type="submit" class="btn-raised">Buscar</button>
+						</form>
 					</div>
-					<div>
-						<span class="overline">Overline text</span>
-					</div>
+				</div>				
+			</main><!-- /search-section -->
 
+			<section class="howto-section">
+				<div class="app-container">
+					<div class="app-content">
+						<h4 class="center-text">¿Cómo funciona?</h4>
+						<div class="grid">
+							<div class="grid__inner">
+								<div class="grid__cell span-4">
+									<img src="http://via.placeholder.com/350x150" alt="#">
+									<h6>1. Encuentra al/la mejor profesional</h6>
+									<p class="body1">Encuentra personas expertas en limpieza, lavado, planchado y hasta cocina, que se adapten a tu presupuesto.</p>
+								</div>
+								<div class="grid__cell span-4">
+									<img src="http://via.placeholder.com/350x150" alt="#">
+									<h6>2. Haz tu reserva</h6>
+									<p class="body1">Encuentra personas expertas en limpieza, lavado, planchado y hasta cocina, que se adapten a tu presupuesto.</p>
+								</div>
+								<div class="grid__cell span-4">
+									<img src="http://via.placeholder.com/350x150" alt="#">
+									<h6>3. Descansa tranquilo/a</h6>
+									<p class="body1">Encuentra personas expertas en limpieza, lavado, planchado y hasta cocina, que se adapten a tu presupuesto.</p>
+								</div>								
+							</div>							
+						</div>
+					</div>
 				</div>
-			</div>			
+			</section><!-- /howto-section -->
+
+
+			<section class="workers-section">
+				<div class="app-container">
+					<div class="app-content">
+						<h4 class="center-text">L@s mejores profesionales</h4>
+						<div class="grid">
+							<div class="grid__inner">
+								<div class="grid__cell span-6">
+									<div class="worker">
+										<div class="worker__header">
+											<div class="worker__photo">
+												<img src="http://via.placeholder.com/72x72" alt="#">
+											</div>
+											<div class="worker__info">
+												<span class="worker__name">María Guadalupe</span>
+												<div class="worker__rating">
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+												</div>
+												<span class="worker__number-services body2">144 servicios</span>
+											</div>
+											<div class="worker__price">36€</div>
+										</div>
+										<div class="worker__content">
+											<ul class="worker__skills">
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+											</ul>
+										</div>
+										<div class="worker__actions">
+											<a href="#" title="Ver perfil" class="btn-outlined">Ver perfil</a>
+											<a href="#" title="Reservar" class="btn-raised">Reservar</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="grid__cell span-6">
+									<div class="worker">
+										<div class="worker__header">
+											<div class="worker__photo">
+												<img src="http://via.placeholder.com/72x72" alt="#">
+											</div>
+											<div class="worker__info">
+												<span class="worker__name">María Guadalupe</span>
+												<div class="worker__rating">
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+													<i class="material-icons">star_rate</i>
+												</div>
+												<span class="worker__number-services body2">144 servicios</span>
+											</div>
+											<div class="worker__price">36€</div>
+										</div>
+										<div class="worker__content">
+											<ul class="worker__skills">
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+												<li>
+													<div class="icon"><i class="material-icons">favorite_border</i></div>
+													<span class="body2">Lavandería</span>
+												</li>
+											</ul>
+										</div>
+										<div class="worker__actions">
+											<a href="#" title="Ver perfil" class="btn-outlined">Ver perfil</a>
+											<a href="#" title="Reservar" class="btn-raised">Reservar</a>
+										</div>
+									</div>
+								</div>
+							
+							</div>							
+						</div>
+					</div>
+				</div>
+			</section><!-- /howto-section -->
+						
 		</div><!-- /app-wrapper -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+		<footer class="footer-app">
+			<div class="footer-container">
+				<div class="footer-content">
+					<ul class="footer-list">
+						<li>
+							<a href="#" title="#">Política de privacidad</a>
+						</li>
+						<li>
+							<a href="#" title="#">Términos y condiciones</a>
+						</li>						
+						<li>
+							<a href="#" title="#">FAQ's</a>
+						</li>
+						<li>
+							<a href="#" title="#">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 		
 	</div>
 	

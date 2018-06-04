@@ -1,0 +1,31 @@
+.footer-app{
+	border-top: 1px solid rgba(0,0,0,.12);
+
+	.footer-container{
+		width: 900px;
+		margin: 0 auto;
+		padding: 32px 0;
+
+		.footer-content{
+			.footer-list{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+
+				li{
+					a{
+						display: block;
+						padding: 8px 16px;
+						text-decoration: none;
+						color: $lightText;
+					}
+				}
+
+			
+			}
+		}
+	}
+}
+

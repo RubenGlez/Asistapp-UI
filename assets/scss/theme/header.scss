@@ -1,7 +1,10 @@
 .top-app-bar{
-	position: relative;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	background-color: $brandColor;
 	color: #fff;
+	z-index: 2;
 
 	.top-app-bar__row{
 		display: flex;
@@ -68,7 +71,7 @@
 			}
 
 			.top-app-bar__link-item{
-				margin: 0 16px;
+				//margin: 0 16px;
 			}
 
 			.top-ap-bar__title{
