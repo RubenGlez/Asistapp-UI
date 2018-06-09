@@ -1,4 +1,4 @@
 # ignoring files
-/node_modules
+node_modules/
 gulpfile.js
 package.json
