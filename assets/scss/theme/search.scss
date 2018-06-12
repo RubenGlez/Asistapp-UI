@@ -1,0 +1,42 @@
+.search-page{
+	background-color: $brandColor;
+
+	.app-wrapper{
+		.app-container{
+			.app-content{
+				form{
+					.form-row{	
+						margin-bottom: 24px;
+
+						label{
+							color: #fff;
+						}
+						
+						.form-input{
+							padding: 12px;
+							border-top-left-radius: 2px;
+							border-top-right-radius: 2px;
+							height: 56px;
+							border: none;
+							background-color: rgba(255, 255, 255, 0.042);
+							width: 100%;
+							border-bottom: 2px solid rgba(255, 255, 255, 0.42);
+							color: #fff;
+
+							&:focus{
+								border-bottom: 2px solid rgba(255, 255, 255, 1);
+							}
+
+						}
+					}
+
+					.btn-outlined__white{
+						height: 56px;
+						width: 100%;
+						margin-top: 24px;
+					}
+				}
+			}
+		}
+	}
+}

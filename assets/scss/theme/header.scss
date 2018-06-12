@@ -1,8 +1,9 @@
-.top-app-bar{
+ .top-app-bar{
 	position: fixed;
 	top: 0;
 	width: 100%;
 	background-color: $brandColor;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 	color: #fff;
 	z-index: 2;
 
@@ -87,6 +88,26 @@
 				white-space: nowrap;
 				overflow: hidden;
 				z-index: 1;
+			}
+		}
+	}
+
+
+
+
+	&.white{
+		background-color: #fff;
+		color: $lightText;
+
+		.top-app-bar__row{
+			.top-app-bar__section{
+				.top-app-bar__navigation-icon{
+					color: $lightText;
+
+					&:before{
+						background-color: #000;
+					}
+				}
 			}
 		}
 	}

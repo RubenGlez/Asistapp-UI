@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<title>Home | Asistapp</title>
+	<link rel="stylesheet" href="assets/css/normalize.min.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body class="search-page">
+	<div class="app">
+
+		<header class="top-app-bar white">
+			<div class="top-app-bar__row">
+				<section class="top-app-bar__section align-start">
+					<button class="top-app-bar__navigation-icon material-icons" aria-label="Atrás">arrow_back</button>
+					<span class="top-ap-bar__title">Configura tu servicio</span>
+				</section>
+			</div>
+		</header><!-- /top-app-bar -->
+
+
+		<div class="app-wrapper">
+
+			<main>
+				<div class="app-container">
+					<div class="app-content">
+
+						<form>
+							<div class="form-row">
+								<label for="ciudad" class="subtitle1">¿Dónde te ayudamos?</label>
+								<input type="text" name="ciudad" id="ciudad" class="form-input" placeholder="Ej: Madrid">
+							</div>
+							<div class="form-row">
+								<label for="tarea" class="subtitle1">¿Cómo te ayudamos?</label>
+								<input type="text" name="tarea" id="tarea" class="form-input" placeholder="Ej: Limpieza">
+							</div>
+							<div class="form-row">
+								<label for="fecha" class="subtitle1">¿Cuando te ayudamos?</label>
+								<input type="datetime-local" name="fecha" id="fecha" class="form-input">
+							</div>
+							<div class="form-row">
+								<label for="duracion" class="subtitle1">¿Cuantas horas?</label>
+								<input type="number" name="duracion" id="duracion" class="form-input" min="1" max="8">
+							</div>	
+
+							<input type="submit" class="btn-outlined__white" value="Buscar">
+						</form>
+
+					</div>
+				</div>				
+			</main><!-- /search-section -->
+						
+		</div><!-- /app-wrapper -->
+		
+	</div>
+
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>-->
+</body>
+</html>

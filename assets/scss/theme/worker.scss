@@ -1,0 +1,245 @@
+// Worker Card
+.worker{
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+	.worker__header{
+		display: flex;
+		flex-direction: row;
+		padding: 16px;
+
+		.worker__photo{
+			img{
+				border-radius: 50%;
+			}
+		}
+
+		.worker__info{
+			padding: 0 16px;
+			flex: 1;
+			min-width: 0;
+
+			.worker__name{
+				color: $darkText;
+				display: block;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+			.worker__rating{				
+				i{
+					width: 20px;
+					font-size: 20px;
+					color: $warningColor;
+				}
+			}
+		}
+
+		.worker__price{
+			margin-left: auto;
+			font-weight: 500;
+			font-size: 1.25rem;
+			line-height: 2rem;
+			letter-spacing: -.0125em;
+			color: $darkText;
+		}
+	}
+
+	.worker__content{
+		padding: 16px;
+
+		.worker__skills{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			li{
+				margin-right: 16px;
+				text-align: center;
+
+				.icon{
+					height: 40px;
+					width: 40px;
+					border: 1px solid rgba(0,0,0,0.12);
+					border-radius: 50%;
+					padding: 7px;
+					margin: 0 auto;
+
+					i{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.worker__actions{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 16px;
+	}
+}
+
+
+
+
+
+// Worker profile
+.profile-page{
+	background-color: $lightBg;
+	.app{
+		.app-wrapper{
+			.app-container{
+				padding-top: 0;
+
+				.app-content{
+					.worker-profile{
+						.worker-profile__header{
+							background-color: $brandColor;
+							color: #fff;
+							position: relative;
+
+							.worker-profile__info{
+								text-align: center;
+								padding: 40px 16px 0;
+								margin-bottom: 64px;
+
+								.worker-profile__rating{
+									i{
+										width: 24px;
+										color: $warningColor;
+									}
+								}
+							}
+
+							.worker-profile__moreinfo{
+								display: flex;
+								flex-direction: row;
+								align-items: flex-end;
+								justify-content: space-between;
+								padding: 0 16px;
+
+								.worker-profile__verified{
+									display: flex;
+									align-items: flex-end;
+									padding-bottom: 4px;
+
+									span{
+										margin-left: 8px;
+									}
+								}
+
+								.worker-profile__photo{
+									position: absolute;
+									line-height: 0;
+									bottom: -64px;
+									left: calc(50% - 64px);
+
+									img{
+										border-radius: 50%;
+										box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+									}
+								}
+
+								.worker-profile__price{
+									font-weight: 500;
+									font-size: 1.25rem;
+									line-height: 2rem;
+									letter-spacing: -.0125em;
+								}
+							}
+						}
+
+						.worker-profile__content{
+							margin-top: 96px;
+
+							.subtitle1{
+								margin: 0;
+								color: $lightText;
+							}
+
+							.worker-profile__skills{
+								margin: 0;
+								padding: 0;
+								background-color: #fff;
+								list-style-type: none;
+								display: flex;
+								flex-direction: row;
+								justify-content: flex-start;
+								box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+								li{
+									text-align: center;
+									padding: 16px;
+
+									.icon{
+										height: 40px;
+										width: 40px;
+										border: 1px solid rgba(0,0,0,0.12);
+										border-radius: 50%;
+										padding: 7px;
+										margin: 0 auto;
+
+										i{
+											display: block;
+										}
+									}
+								}
+							}
+						}
+
+						.worker-profile__availability{
+							.subtitle1{
+								margin-bottom: 0;
+								color: $lightText;
+							}
+
+							.calendar{
+								box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+								.dhx_cal_container{
+									width: 100%;
+									min-height: 1140px;
+								}
+							}
+						}
+
+						.worker-profile__comments{
+							.subtitle1{
+								margin-bottom: 0;
+								color: $lightText;
+							}
+							.comment{
+								background-color: #fff;
+								padding: 16px;
+								margin-bottom: 16px;
+								box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+								.comment__rating{				
+									i{
+										width: 24px;
+										font-size: 24px;
+										color: $warningColor;
+									}
+								}
+
+								.comment__info{
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
